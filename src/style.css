@@ -1,0 +1,43 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  display: inline;
+}
+
+li {
+  list-style: none;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.border {
+  padding: 30px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+}
+
+#search-button {
+  background: #355691;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+#current-location-button {
+  background: #b9d3eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: inherit;
+  padding: 2.2px 10px;
+}
+
+#current-date-and-time {
+  padding: 0;
+  margin-bottom: 0;
+}
