@@ -10,6 +10,10 @@ li {
   list-style: none;
 }
 
+i {
+  display: inline;
+}
+
 .weather-app {
   max-width: 600px;
   margin: 30px auto;
@@ -46,15 +50,22 @@ li {
   border-radius: 10px;
 }
 
-#current-date-and-time {
+#current-date-time {
   padding: 0;
   margin-bottom: 0;
 }
 
+#weather-image {
+  width: 80px;
+  display: inline;
+  position: relative;
+  top: -15px;
+}
 #current-temperature strong {
-  font-size: 64px;
+  font-size: 65px;
   font-weight: 400;
   line-height: 1;
+  display: inline;
 }
 
 #temperature-conversion {
@@ -63,7 +74,11 @@ li {
   top: -36px;
 }
 
-.humidity-wind {
+#description {
+  text-transform: capitalize;
+}
+
+.description-humidity-wind {
   position: relative;
   padding-top: 80px;
 }

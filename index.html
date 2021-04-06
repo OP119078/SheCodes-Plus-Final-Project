@@ -9,6 +9,8 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5b392db46d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>Final Project</title>
 </head>
@@ -21,35 +23,34 @@
                     <input type="text" placeholder="Where are you?" autofocus=on id="search-bar">
                     <input type="submit" value="Search" type="button" id="search-button">
                 </form>
-                <button id="current-location-button">Find Me</button>
+                <button id="current-location-button">Current</button>
 
                 <br />
                 <br />
 
                 <div class="row">
                     <div class="col-7">
-                        <ul id="current-date-and-time">
-                            <li>
-                                Tuesday 6th April
+                        <ul id="current-date-time">
+                            <li id="current-date">
                             </li>
-                            <li>
-                                11:15
+                            <li id="current-time">
                             </li>
                         </ul>
-                        <h1>Cambridge</h1>
-                        <h2 id="current-temperature"><strong>4</strong><span id="temperature-conversion">°C | °F
-                            </span></h2>
+                        <h1 id="city"></h1>
+
+
+                        <h2 id="current-temperature"><img id="weather-image" src="media/cloudy.png" alt="clouds">
+                            <strong id="temperature"></strong> <span id="temperature-conversion">°C | °F
+                            </span>
+                        </h2>
                     </div>
-                    <div class="col-5 humidity-wind">
+                    <div class="col-5 description-humidity-wind">
                         <ul>
-                            <li>
-                                Cloudy
+                            <li id="description">
                             </li>
-                            <li>
-                                Humidity: 12%
+                            <li> Humidity: <span id="humidity"></span>%
                             </li>
-                            <li>
-                                Wind: 5 km/h
+                            <li> Wind: <span id="wind-speed"></span> km/h
                             </li>
                         </ul>
 
