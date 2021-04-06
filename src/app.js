@@ -33,12 +33,38 @@ function displayWeather(response) {
     document.querySelector("#weather-image").setAttribute("alt", response.data.weather[0].description)
 }
 
-let apiKey = "a57cca630b0e893126f37f33164019a3"
-let city = "London"
-let units = "metric"
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`
+function search(city) {
+    let apiKey = "a57cca630b0e893126f37f33164019a3"
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
+    axios.get(apiUrl).then(displayWeather)
+}
 
-axios.get(apiUrl).then(displayWeather)
+function displayCity(event) {
+    event.preventDefault();
+    let city = (document.querySelector("#search-bar-input")).value;
+    search(city);
+}
+
+function showLocation(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "a57cca630b0e893126f37f33164019a3";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${units}&appid=${apiKey}`;
+  console.log(apiUrl)
+  axios.get(apiUrl).then(displayWeather)
+}
+
+function showPosition(event) {
+  navigator.geolocation.getCurrentPosition(showLocation) 
+}
+
 
 let now = new Date();
 formatDate(now);
+
+document.querySelector("#search-bar").addEventListener("submit", displayCity)
+document.querySelector("#current-location-button").addEventListener("click", showPosition)
+
+search("London");
