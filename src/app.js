@@ -29,6 +29,8 @@ function displayWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
     document.querySelector("#wind-speed").innerHTML = Math.round((response.data.wind.speed) * 3.6);
+    document.querySelector("#weather-image").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
+    document.querySelector("#weather-image").setAttribute("alt", response.data.weather[0].description)
 }
 
 let apiKey = "a57cca630b0e893126f37f33164019a3"
