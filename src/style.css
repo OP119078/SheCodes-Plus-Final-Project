@@ -21,6 +21,11 @@ li {
   border-radius: 10px;
 }
 
+#search-bar {
+  width: 60%;
+  margin: 0 auto;
+}
+
 #search-button {
   background: #355691;
   color: #fff;
@@ -37,7 +42,28 @@ li {
   padding: 2.2px 10px;
 }
 
+.change-degree-unit {
+  border-radius: 10px;
+}
+
 #current-date-and-time {
   padding: 0;
   margin-bottom: 0;
+}
+
+#current-temperature strong {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+#temperature-conversion {
+  font-size: 15px;
+  position: relative;
+  top: -36px;
+}
+
+.humidity-wind {
+  position: relative;
+  padding-top: 80px;
 }

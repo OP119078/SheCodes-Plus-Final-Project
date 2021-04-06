@@ -18,18 +18,16 @@
         <div class="weather-app">
             <div class="border">
                 <form>
-                    <input type="text" placeholder="Where are you?" autofocus=on>
+                    <input type="text" placeholder="Where are you?" autofocus=on id="search-bar">
                     <input type="submit" value="Search" type="button" id="search-button">
                 </form>
                 <button id="current-location-button">Find Me</button>
-                <button>°C</button>
-                <button>°F</button>
 
                 <br />
                 <br />
 
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-7">
                         <ul id="current-date-and-time">
                             <li>
                                 Tuesday 6th April
@@ -39,10 +37,14 @@
                             </li>
                         </ul>
                         <h1>Cambridge</h1>
-                        <h2>4°C</h2>
+                        <h2 id="current-temperature"><strong>4</strong><span id="temperature-conversion">°C | °F
+                            </span></h2>
                     </div>
-                    <div class="col-6">
+                    <div class="col-5 humidity-wind">
                         <ul>
+                            <li>
+                                Cloudy
+                            </li>
                             <li>
                                 Humidity: 12%
                             </li>
