@@ -74,6 +74,24 @@ i {
   top: -36px;
 }
 
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#celsius-link {
+  text-decoration: none;
+}
+
+#fahrenheit-link {
+  text-decoration: none;
+}
+
 #description {
   text-transform: capitalize;
 }
