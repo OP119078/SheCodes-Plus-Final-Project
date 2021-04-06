@@ -36,7 +36,6 @@ let city = "London"
 let units = "metric"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`
 
-console.log(apiUrl)
 axios.get(apiUrl).then(displayWeather)
 
 let now = new Date();
