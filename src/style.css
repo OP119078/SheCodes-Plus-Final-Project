@@ -19,11 +19,10 @@ i {
   margin: 30px auto;
 }
 
-.border {
+#border {
   padding: 30px;
   border: 1px solid #dadde1;
   border-radius: 10px;
-  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 #search-bar-input {
@@ -32,7 +31,7 @@ i {
 }
 
 #search-button {
-  background: #355691;
+  background: #7ecbf4;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -40,7 +39,7 @@ i {
 
 #current-location-button {
   background: #fff;
-  color: #355691;
+  color: #7ecbf4;
   border: none;
   border-radius: 10px;
   font-size: inherit;

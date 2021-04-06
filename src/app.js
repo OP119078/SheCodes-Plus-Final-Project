@@ -55,7 +55,6 @@ function displayForecast(response) {
           <span class="weather-forecast-temperature-min"> ${Math.round(forecastDay.temp.min)}° </span>
         </div>
       </div>
-      
   `;
   }
   });
@@ -66,12 +65,14 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
     let apiKey = "a57cca630b0e893126f37f33164019a3"
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`
+    let units = "metric"
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=${units}`
     axios.get(apiUrl).then(displayForecast);
 }
 
 
 function displayWeather(response) {
+    console.log(response.data);
     celsiusTemperature = response.data.main.temp;
     document.querySelector("#temperature").innerHTML = Math.round(celsiusTemperature);
     document.querySelector("#description").innerHTML = response.data.weather[0].description;
