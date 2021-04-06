@@ -105,3 +105,20 @@ i {
 #github-link {
   font-family: "Roboto Mono", monospace;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.upcoming-weekday {
+  opacity: 0.8;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-min {
+  color: #355691;
+}

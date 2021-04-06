@@ -26,10 +26,8 @@
                     <input type="submit" value="Search" type="button" id="search-button">
                 </form>
                 <button id="current-location-button">My Location</button>
-
                 <br />
                 <br />
-
                 <div class="row">
                     <div class="col-7">
                         <ul id="current-date-time">
@@ -39,11 +37,11 @@
                             </li>
                         </ul>
                         <h1 id="city"></h1>
-
-
-                        <h2 id="current-temperature"><img id="weather-image" src="" alt="clouds">
-                            <strong id="temperature"></strong> <span id="temperature-conversion"> <a href="#"
-                                    id="celsius-link" class="active">°C </a>|
+                        <h2 id="current-temperature">
+                            <img id="weather-image" src="" alt="clouds" />
+                            <strong id="temperature"></strong>
+                            <span id="temperature-conversion">
+                                <a href="#" id="celsius-link" class="active">°C </a>|
                                 <a href="#" id="fahrenheit-link">°F</a>
                             </span>
                         </h2>
@@ -57,24 +55,33 @@
                             <li> Wind: <span id="wind-speed"></span> km/h
                             </li>
                         </ul>
-
                         <br />
+                    </div>
+                </div>
+                <div class="weather-forecast">
+                    <div class="row">
+                        <div class="col-2 upcoming-weekday">
+                            Wed
+                            <img src=" http://openweathermap.org/img/wn/02d@2x.png" alt="" width=36px />
+                            <br />
+                            <div class="weather-forecast-temperatures">
+                                <span class="weather-forecast-temperature-max">
+                                    18° </span>
+                                <span class="weather-forecast-temperature-min">12° </span>
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
+                <small id="github-link"><a href="https://github.com/OP119078/SheCodes-Plus-Final-Project"
+                        target="_blank">
+                        Open-source
+                        code</a>
+                    by Olivia Peacock</small>
             </div>
-
-            <small id="github-link"><a href="https://github.com/OP119078/SheCodes-Plus-Final-Project" target="_blank">
-                    Open-source
-                    code</a>
-                by Olivia Peacock</small>
         </div>
-
-
-    </div>
-
-    <script src="src/app.js"></script>
-
+        <script src="src/app.js"></script>
 </body>
 
 </html>
