@@ -15,7 +15,7 @@ i {
 }
 
 h1 {
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .weather-app {
@@ -27,6 +27,7 @@ h1 {
   padding: 30px;
   border: 1px solid #dadde1;
   border-radius: 10px;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 #search-bar-input {
@@ -35,8 +36,8 @@ h1 {
 }
 
 #search-button {
-  background: #a3cbf0;
-  color: #fff;
+  background: #fff;
+  color: #a3cbf0;
   border: none;
   border-radius: 10px;
 }
@@ -59,12 +60,18 @@ h1 {
   margin-bottom: 0;
 }
 
+.card {
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
 #weather-image {
   width: 80px;
   display: inline;
   position: relative;
   top: -15px;
 }
+
 #current-temperature strong {
   font-size: 65px;
   font-weight: 400;
@@ -102,7 +109,7 @@ h1 {
 
 .description-humidity-wind {
   position: relative;
-  padding-top: 100px;
+  padding-top: 140px;
 }
 
 #github-link {
